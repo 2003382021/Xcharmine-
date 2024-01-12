@@ -1,0 +1,83 @@
+<head>
+    <title>
+        Review Order
+    </title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="banner-t">
+        <div class="order" id="order">
+        <header>
+            <h1>Review Your Order</h1>
+        </header>
+    
+        <main>
+    
+            <h2>Selected Items</h2>
+    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Loop through selected items and populate the table -->
+                    <tr>
+                        <td>Product 1</td>
+                        <td>2</td>
+                        <td>$20.00</td>
+                        <td>$40.00</td>
+                    </tr>
+                    <tr>
+                        <td>Product 2</td>
+                        <td>1</td>
+                        <td>$30.00</td>
+                        <td>$30.00</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+    
+            <div class="total">
+                Total: $70.00
+            </div>
+    
+            <a href="#" class="checkout-btn" id="checkout-btn" onclick="transaction()">Proceed to Checkout</a>
+    
+        </main>
+        </div>
+        <div class="payment" id="payment">
+            <div class="form transaction">
+                <h2>Complete Order</h2>
+                <form action="#">
+                    <div class="inputbox">
+                        <span class="icon"><ion-icon name="Phone"></ion-icon></span>
+                        <input type="text"required>
+                        <Label>Enter Phone</Label>
+                    </div>
+                    <div class="inputbox">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input type="password"required>
+                        <Label>Confirm Account Password</Label>
+                    </div>
+                    <button type="submit" class="btn">Complete Order</button>
+                    <div class="reg">
+                        <p>
+                            <a href="#" class="move-back">back</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="project.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>                                                                         
